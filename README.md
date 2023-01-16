@@ -23,3 +23,11 @@ config/database/
   -> PetSitter.postman_collection.json -> contiene todas las URLS END-POINT de la API
   
   -> PetSitter.sql -> contiene toda la informacion del esquema de la BD
+  
+  4.- Correr la API
+  
+  npm start
+  
+  4.1 consultar PetSitter.postman_collection.json en -> config/database/sql-postman/PetSitter.postman_collection.json
+  
+  4.2 importar PetSitter.postman_collection.json a postman
