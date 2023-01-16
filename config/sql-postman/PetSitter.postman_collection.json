@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "108d4ff1-5b2c-4ef2-b1ad-db37dda87dac",
+		"name": "PetSitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "crear-petsitter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"luis\",\r\n    \"lastName\": \"eduardo\",\r\n    \"email\": \"eduardo@gmail.com\",\r\n    \"cellphone\": 667145695 ,\r\n    \"photoURL\": \"www.urlistas.com\",\r\n    \"cityId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/crear-petsitter",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"crear-petsitter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar-petsitter",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Victor\",\r\n    \"lastName\": \"Moreno\",\r\n    \"email\": \"victorvolado@gmail.com\",\r\n    \"cellphone\": 6671172020,\r\n    \"photoURL\": \"URL/COM-PRUEBA.com\",\r\n    \"cityId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/editar-petsitter/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"editar-petsitter",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar-petsitter",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/eliminar-petsitter/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"eliminar-petsitter",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar-petsitters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/consultar-petsitters",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultar-petsitters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar-petsittersByState",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/consultar-petsittersByState/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultar-petsittersByState",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar-petsittertype",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"petSitterId\": 4,\r\n    \"petsTypeId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/agregar-petsittertype",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"agregar-petsittertype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar-petsittersByType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/consultar-petsittersByType/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultar-petsittersByType",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
