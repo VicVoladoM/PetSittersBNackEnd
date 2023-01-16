@@ -11,7 +11,9 @@ cd PetSittersBackEnd
 npm install
 
 3.- Ingresar a la siguiente carpeta para mirar los archivos que contienen la BD y los End-points
+
 config/database/
+  
   3.1 Carpeta "queries" 
   
   -> petSitterQueries.js -> contiene todas las Querys de la BD
